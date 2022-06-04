@@ -20,4 +20,46 @@
 
 ## **Favorite Basketball Player Script**
 ### **Pickle Module**
-<sub>The program I created uses pickling and exception handling when asking the user for their favorite basketball player and details about the player. I start the script by importing the pickle module to serialize the input data from the user. Pickling is defined as a method to store data to a file that can be accessed randomly.</sub>
+<sub>The program I created uses pickling and exception handling when asking the user for their favorite basketball player and details about the player. I start the script by importing the pickle module to serialize the input data from the user. Pickling is defined as a method to store data to a file that can be accessed randomly. (Figure 1)</sub>
+
+![Figure 1:Screen shot of the script to import the pickle module.](https://github.com/KAM9010/IntroToProg-Python-Mod07/blob/main/docs/Figure07-1.png)
+
+<sub> ***Figure 1:Screen shot of the script to import the pickle module.*** </sub>
+
+<sub>I created the variable “strFileName“ to represent the file PlayerData.dat and the variable “lstFavorite” to capture the list data provided from the user to save to the file. Before this assignment we had been writing data to text files because we were working with data that we wanted to be human readable but now, we are writing to binary files. When writing the data to the binary file the data will be converted from plain text to binary. When I open the file and use the mode “rb” it reads from the binary file. When I open the file and use “wb” it will write to and create the binary file if it doesn’t exist. Unlike before when we were using the modes “r” and “w” when working with a text file we have now added the b to indicate that the data should be binary. Another difference with using pickling is that we no longer use functions like “write” or “append. Instead we use the “pickle.dump” function which will write data to the file and “pickle.load” function which will read and retrieve data from the binary file. (Figure 2)</sub>
+
+![Figure 2:Screen shot of pickling being used in the script.](https://github.com/KAM9010/IntroToProg-Python-Mod07/blob/main/docs/Figure07-2.png)
+
+<sub> ***Figure 2:Screen shot of pickling being used in the script.*** </sub>
+
+### **Exception Handling**
+
+<sub>The next part of the script is where I use exception handling. Exception handling is used when the script runs into an error while running the program and displays an error message. There are built in exceptions that can be used but sometimes the language is not user friendly and can be difficult for an end user to understand. In my script I used the built-in exception “ValueError” when asking the user for their favorite player’s jersey number. If the user provides input that is not a number, then a message will be displayed indicting there was an error and why. Instead of using the built-in message I created my own detailed response so the user can better understand why there was an error. I use the while true loop and then “try” to declare that it should try to execute the following code and to raise an exception if the user provides anything other than a number with the ValueError message that I created indicting the error. Then to continue to ask the question until an integer is provided and then break from the while true loop and finish executing the rest of the script. (Figure 3)</sub>
+
+![Figure 3:Screen shot of Exception Handling being used in the script.](https://github.com/KAM9010/IntroToProg-Python-Mod07/blob/main/docs/Figure07-3.png)
+
+<sub> ***Figure 3:Screen shot of Exception Handling being used in the script.*** </sub>
+
+## **Summary**
+
+<sub>At first this assignment was very challenging as I tried to start from scratch and then decided to use code that I had already used in previous assignments to accomplish the task. Learning about exception handling was fun because I had tried to figure it out in previous assignments when I only wanted specific input from the user. I also now understand how to store data in another format and recognize the risks of unpickling unknown data. Now I have another tool under my belt and can write better scripts and get the information I want from the user.</sub>
+
+
+## **Script running in PyCharm**
+
+
+### **PyCharm**
+![Figure 4](https://github.com/KAM9010/IntroToProg-Python-Mod07/blob/main/docs/Figure07-4.png)
+
+### **PlayerData.dat**
+![Figure 5](https://github.com/KAM9010/IntroToProg-Python-Mod07/blob/main/docs/Figure07-5.png)
+
+
+## **Script running in Terminal**
+
+
+### **Terminal**
+![Figure 6](https://github.com/KAM9010/IntroToProg-Python-Mod07/blob/main/docs/Figure07-6.png)
+
+### **PlayerData.dat**
+![Figure 7](https://github.com/KAM9010/IntroToProg-Python-Mod07/blob/main/docs/Figure07-7.png)
